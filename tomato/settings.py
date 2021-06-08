@@ -134,6 +134,3 @@ STATICFILES_DIRS = (
 )
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
-
-# Activate Django-Heroku.
-django_heroku.settings(locals)
