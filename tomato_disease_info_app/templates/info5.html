@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% endblock %}
+{% block csslist %}
+<link rel="stylesheet"   href='{% static "tomato_disease_info_app/css/info2.css" %}'>
+{% endblock %}
+
+{% block title %}토마토질병 - 청벌레{% endblock%}
+
+{% block content %}
+
+<div class="main_field">
+	<div class="content_field">
+		<ul>
+			<li>
+				<div class="disease-main-content">
+					<div class="photoSch">
+						<table class="gridPhoto" id="oInputTable">
+							<!-- 스타일제거시 테이블형태 유지를 위해 보더를 준다 -->
+							<colgroup>
+								<col width="200px">
+								<col width="120px">
+								<col width="*">
+							</colgroup>
+							<tbody class='flexible'>
+								<tr>
+									<div class="title_img">
+									<td rowspan="7"><img id="image"
+										src="{% static 'images/disease_info/cat5/cat5_1.jpg' %}"></td>
+									</div>
+								</tr>
+								<tr>
+									<!-- <td rowspan="4">
+										<img width="200" height="200"
+											src="{% static 'images/disease_info/cat1/cat1_1.jpg' %}">
+									</td> -->
+
+
+                                    <!-- 충해 html 스타일  -->
+									<td width=200px><span class="titlePhoto" >한글명</span></td>
+									<td>배추흰나비(청벌레) </td>
+								</tr>
+                                <tr>
+									<td width=200px><span class="titlePhoto" >속종명</span></td>
+									<td>Pieris / rapae</td>
+								</tr>
+								<tr>
+									<td width=200px><span class="titlePhoto" >목 / 과명</span></td>
+									<td>	나비목 / 흰나비과</td>
+								</tr>
+                                <tr>
+									<td width=200px><span class="titlePhoto" >영문별칭</span></td>
+									<td>common cabbage worm</td>
+								</tr>
+								<tr>
+									<td width=200px><span class="titlePhoto" >    명명년도 / 명명자</span></td>
+									<td>1758 / (Linnaeus)</td>
+								</tr>
+								<tr>
+									<td width=200px><span class="titlePhoto" >작물명</span></td>
+									<td>배추,토마토</td>
+								</tr>
+							</tbody>
+						</table>
+			</li>
+
+			<li>
+				<!-- <ul>
+					<li class="disease_title">
+						<h4> 병원체 정보</h4>
+					</li>
+				</ul> -->
+
+                <ul>
+					<li>
+						<h5>분포정보</h5>
+					</li>
+					<li class="article">
+						전국
+					</li>
+				</ul>
+                <ul>
+					<li>
+						<h5>형태정보</h5>
+					</li>
+					<li class="article">
+						배추흰나비 유충은 30mm정도로 녹색이고 몸에 잔털이 빽빽하게 나 있다. 번데기는 회황색이고 머리와 가슴에 1개의 돌기가 있다. 성충은 암컷과 수컷의 모양이 다르나 대개 백색이며 앞날개 앞쪽에는 검은 반점이 2개, 뒷날개에는 1개가 있다. 몸의 길이는 20mm이고, 날개를 편 길이가 50~60mm이다. 수컷은 암컷보다 몸이 가늘고 더 희다. 알은 원주형으로 황색이고 잎 뒷면에 낳는다.
+					</li>
+				</ul>
+
+				<ul>
+					<ul>
+						<li class="disease_title">
+							<h4> 일반정보</h4>
+						</li>
+					</ul>
+
+				</ul>
+
+				<ul>
+					<li>
+						<h5>생태정보</h5>
+					</li>
+					<li class="article">
+						어린 배추에서는 피해가 클 때가 있지만 집중 발생하지 않아 피해는 다소 크지 않은 편이다. 년4~5회 발생하며, 번데기로 식물체, 담벽, 처마 등에 붙어 월동하고 이른 봄부터 성충이 되어 무, 배추, 양배추 또는 냉이와 같은 야생십자화과 식물의 잎 뒷면에 알을 낳는다. 배추흰나비는 가을 김장무, 배추까지 계속 세대를 되풀이하기 때문에 봄부터 가을까지 각 충태를 볼 수 있다. 봄에 피해가 심하며, 장마와 더불어 무더운 여름철이 되면 발생이 줄었다가 다시 가을철에는 발생이 늘어난다. 알은 낱개로 낳는다. 성충은 낮에 활동을 잘한다. 예찰의 경우 성충은 흰나비로 낮에 활동을 잘 하여 쉽게 눈에 띠며, 유충은 어린 순을 잘 관찰하면 배추 잎 색과 비슷하여 관찰이 쉽지 않지만 초록색의 잔털이 많이 있는 유충을 발견할 수있다. 날씨가 덥고 비가 많이 올때는 적게 발생하고, 날씨가 선선하고 가뭄이 지속될 때 많이 발생한다.
+					</li>
+				</ul>
+
+
+				<ul>
+					<li>
+						<h5>피해정보</h5>
+					</li>
+					<li class="article">
+						유충이 어릴 때는 잎의 표피만 남기고 엽육을 가해하나, 다자란 유충은 잎줄기만 남기고 폭식한다. 특히 가을과 봄에 피해가 심하고, 심한 피해를 받은 배추와 양배추는 결구가 되지 않는다.
+					</li>
+				</ul>
+
+				<ul>
+					<li>
+						<h5>방제방법</h5>
+					</li>
+					<li class="article">
+						수확 잔재물을 태우거나 먼곳에 버려야 한다. 기생성 천적으로 배추나비고치벌이 있다. 배추에 등록된 약제를 살포한다.
+					</li>
+				</ul>
+
+
+			</li>
+
+			<li>
+				<br><br>
+				<h4>병 사진정보</h4>
+
+				<div class="imgpanel" >
+					<div class="container" id="gallery">
+					<img src="{% static 'images/disease_info/cat5/cat5_1.jpg' %}" alt="">
+					
+					<!-- <div id="myModal" class="modal">
+							<span class="close" onclick="document.getElementById('myModal').style.display=none">&times;</span>
+						<img class src="modal-content" id="modal-image" alt="">
+
+						<div id="caption"></div>
+					</div> -->
+
+					<img src="{% static 'images/disease_info/cat5/cat5_2.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat5/cat5_3.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat5/cat5_4.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat5/cat5_5.jpg' %}" alt="">
+
+					</div>
+				</div>
+					</ul>
+			</div>
+				
+
+			</li>
+
+			<li>
+				출처 : <a href=""></a>
+			</li>
+
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+{% endblock %}
+<!-- <script type="text/javascript">
+	//get the modal
+	var modal = document.getElementById('myModal');
+
+	var img = $('.myImg');
+	var modalImg = $("img01");
+	var captionText = document.getElementById("caption");
+	$('.myImg').click(function(){
+		modal.style.display = "block";
+		var newSrc = this.src;
+		modalImg.attr('src', newSrc);
+		captionText.innerHTML = this.alt;
+	})
+
+	// get the <span> element that closes the modal
+		var span=document.getElementById("close")[0];
+	// When the user clicks on <span> (x), close the modalImg
+		span.onclick = function(){
+			modal.style.display=none;
+		}
+
+</script> -->

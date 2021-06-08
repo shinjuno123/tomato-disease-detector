@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% endblock %}
+{% block csslist %}
+<link rel="stylesheet"   href='{% static "tomato_disease_info_app/css/info2.css" %}'>
+{% endblock %}
+
+{% block title %}토마토질병 - 황화잎말림바이러스{% endblock%}
+
+{% block content %}
+
+<div class="main_field">
+	<div class="content_field">
+		<ul>
+			<li>
+				<div class="disease-main-content">
+					<div class="photoSch">
+						<table class="gridPhoto" id="oInputTable">
+							<!-- 스타일제거시 테이블형태 유지를 위해 보더를 준다 -->
+							<colgroup>
+								<col width="200px">
+								<col width="120px">
+								<col width="*">
+							</colgroup>
+							<tbody class='flexible'>
+								<tr>
+									<div class="title_img">
+									<td rowspan="5"><img id="image"
+										src="{% static 'images/disease_info/cat7/cat7_1.png' %}"></td>
+									</div>
+								</tr>
+								<tr>
+									<!-- <td rowspan="4">
+										<img width="200" height="200"
+											src="{% static 'images/disease_info/cat1/cat1_1.jpg' %}">
+									</td> -->
+									<td><span class="titlePhoto">한글명</span></td>
+									<td>황화잎말림바이러스</td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">한문명</span></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">영문명</span></td>
+									<td>Tomato yellow leaf curl virus  </td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">작물명</span></td>
+									<td>토마토</td>
+								</tr>
+							</tbody>
+						</table>
+			</li>
+
+			<li>
+				<ul>
+					<li class="disease_title">
+						<h4> 병원체 정보</h4>
+					</li>
+				</ul>
+				<ul>
+					<li id=info1>
+						<h3></h3>
+						<h5>병원체명<h5>
+					</li>
+				</ul>
+				<ul>
+					<li class=article>
+						ㆍTomato yellow leaf curl virus    
+					</li>
+					<ul>
+						<li class="disease_title">
+							<h4> 일반정보</h4>
+						</li>
+					</ul>
+
+				</ul>
+
+				
+				<ul>
+					<li>
+						<h5>방제방법</h5>
+					</li>
+					<li class="article">
+                        병을 전염시키는 해충의 세대 기간이 짧아 연간 발생횟수가 많고 증식률이 높으므로 발생초기에 방제하고, 육묘 시 철저한 관리로 병의 확산 예방 한다.
+					</li>
+				</ul>
+
+
+			</li>
+
+			<li>
+				<br><br>
+				<h4>병 사진정보</h4>
+
+				<div class="imgpanel" >
+					<div class="container" id="gallery">
+					<img src="{% static 'images/disease_info/cat7/cat7_1.png' %}" alt="">
+					
+					<!-- <div id="myModal" class="modal">
+							<span class="close" onclick="document.getElementById('myModal').style.display=none">&times;</span>
+						<img class src="modal-content" id="modal-image" alt="">
+
+						<div id="caption"></div>
+					</div> -->
+
+					<img src="{% static 'images/disease_info/cat7/cat7_2.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat7/cat7_3.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat7/cat7_4.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat7/cat7_5.jpg' %}" alt="">
+
+					</div>
+				</div>
+					</ul>
+			</div>
+				
+
+			</li>
+
+			<li>
+                <ul>
+				<li>
+                    <h5>출처</h5>
+                <li class="article">
+                <a href="https://ncpms.rda.go.kr/npms/ImageSearchInfoR4.np?detailKey=D00004252&moveKey=&queryFlag=V&upperNm=%EC%B1%84%EC%86%8C&kncrCode=VC010803&kncrNm=%ED%86%A0%EB%A7%88%ED%86%A0&nextAction=%2Fnpms%2FImageSearchDtlR4.np&finalAction=&flagCode=S&sPriyClCode=">국가농작물병해충관리시스템NCPMS
+                    병해충정보  >  작물별 도감정보</a><br>
+                </li>
+                </li> 
+                </ul>
+            </li>
+
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+{% endblock %}
+<!-- <script type="text/javascript">
+	//get the modal
+	var modal = document.getElementById('myModal');
+
+	var img = $('.myImg');
+	var modalImg = $("img01");
+	var captionText = document.getElementById("caption");
+	$('.myImg').click(function(){
+		modal.style.display = "block";
+		var newSrc = this.src;
+		modalImg.attr('src', newSrc);
+		captionText.innerHTML = this.alt;
+	})
+
+	// get the <span> element that closes the modal
+		var span=document.getElementById("close")[0];
+	// When the user clicks on <span> (x), close the modalImg
+		span.onclick = function(){
+			modal.style.display=none;
+		}
+
+</script> -->

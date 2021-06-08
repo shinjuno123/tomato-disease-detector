@@ -1,0 +1,131 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block csslist %}
+<link rel="stylesheet" href='{% static "tomato_disease_info_app/css/disease_info.css" %}'>
+{% endblock %}
+
+{% block title %}토마토 질병{% endblock %}
+
+{%block content %}
+
+<div class="main_field">
+    <div class="disease-main-content" align="center">
+        <br>
+        <ul>
+            <li class="disease_title">
+                <h2> 토마토 질병 도감</h2>
+            </li>
+            <br><br>
+            <li id=info1>
+                <h3></h3>
+                <div>토마토의 병충해 종류와 정보를 알려드립니다.</div>
+            </li>
+
+            <br><br>
+<!-- 
+            <li>
+                <div>
+                    내용
+                </div>
+            </li> -->
+
+            <div id="disease_img" align="center">
+                <ul class="disease_list photoserach">
+                    <li class="1">
+                        <dl class="frame">
+                            <dd>
+                                <a href="info_page">
+                                    <img src="{%static 'images/disease_info/cat1/cat1_1.jpg' %}" alt="점무늬병">
+                                </a>
+                            </dd>
+                            <dt class="p1 mt1">
+                                <a href=""><strong>점무늬병</strong></a>
+                                
+                            </dt>
+                        </dl>
+                    </li>
+                    <li class="2">
+                        <dl class="frame">
+                            <dd>
+                                <a href="info_page/2">
+                                    <img src="{%static 'images/disease_info/cat2/cat2_1.jpg' %}" alt="궤양병">
+                                </a>
+                            </dd>
+                            <dt class="p1 mt1"><a href=""><strong>궤양병</strong></dt></a>
+                        </dl>
+                    </li>
+                    <li class="3">
+                        <dl class="frame">
+                            <dd>
+                                <a href="info_page/3">
+                                    <img src="{%static 'images/disease_info/cat3/cat3_1.jpg' %}" alt="아메리카잎굴파리">
+                                </a>
+                            </dd>
+                            <dt class="p1 mt1"><a href=""><strong>아메리카잎굴파리</strong></dt></a>
+                        </dl>
+                    </li>
+                    <li class="4">
+                        <dl class="frame">
+                            <dd>
+                                <a href="info_page/4">
+                                    <img src="{%static 'images/disease_info/cat4/cat4_1.jpg' %}" alt="잎곰팡이병">
+                                </a>
+                            </dd>
+                            <dt class="p1 mt1"><a href=""><strong>잎곰팡이병</strong></dt></a>
+                        </dl>
+                    </li>
+                    <li class="5">
+                        <dl class="frame">
+                            <dd>
+                                <a href="info_page/5">
+                                    <img src="{%static 'images/disease_info/cat5/cat5_1.jpg' %}" alt="청벌레">
+                                </a>
+                            </dd>
+                            <dt class="p1 mt1"><a href=""><strong>청벌레</strong></dt></a>
+                        </dl>
+                    </li>
+                    <li class="6">
+                        <dl class="frame">
+                            <dd>
+                                <a href="info_page/6">
+                                    <img src="{%static 'images/disease_info/cat6/cat6_1.jpg' %}" alt="토마토퇴록바이러스">
+                                </a>
+                            </dd>
+                            <dt class="p1 mt1"><a href=""><strong>토마토퇴록바이러스</strong></dt></a>
+                        </dl>
+                    </li>
+                    <li class="7">
+                        <dl class="frame">
+                            <dd>
+                                <a href="info_page/7">
+                                    <img src="{%static 'images/disease_info/cat7/cat7_1.png' %}" alt="황화잎말림바이러스">
+                                </a>
+                            </dd>
+                            <dt class="p1 mt1"><a href=""><strong>황화잎말림바이러스</strong></dt></a>
+                        </dl>
+                    </li>
+                    <li class="8">
+                        <dl class="frame">
+                            <dd>
+                                <a href="info_page/8">
+                                    <img src="{%static 'images/disease_info/cat8/cat8_1.png' %}" alt="흰가루병">
+                                </a>
+                            </dd>
+                            <dt class="p1 mt1"><a href=""><strong>흰가루병</strong></dt></a>
+                        </dl>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <br><br>
+
+
+        </ul>
+
+
+    </div>
+</div>
+
+{% endblock %}

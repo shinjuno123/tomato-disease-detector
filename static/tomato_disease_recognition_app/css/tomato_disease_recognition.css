@@ -1,0 +1,199 @@
+.disease-recognition-box{
+    display: flex;
+    /* flex-direction: column; */
+    position: relative;
+    height:30em;
+    width: 70%;
+    /* background-color: aqua; */
+    left: 50%;
+    /* top: 20vh; */
+    transform: translate(-50%,0%);
+    justify-content:space-between;
+}
+
+
+.disease-recognition-box div{
+    top: 70%;
+    transform: translate(0%,-70%);
+}
+#uploading-box{
+    position: relative;
+    /* background-color: beige; */
+    height: 30vw;
+    width: 30vw;
+    border: 4px dotted skyblue;
+    border-radius: 5px;
+    display:table-cell;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+
+}
+#uploading-box>input{
+    display: none;
+    
+}
+#uploading-box>img{
+    position: relative;
+    width: 95%;
+    height: 95%;
+    /* left: 50%; */
+    top: 50%;
+    border-radius: 5px;
+    transform: translate(0%,-50%);
+}
+#prediction-box{
+    position: relative;
+    background-color: black;
+    height: 30vw;
+    width: 30vw;
+}
+#prediction-box img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.next-image{
+    position: relative;
+    width: 8vw;
+    height: 8vw;
+    cursor: pointer;
+}
+
+.next-image>img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.result-box{
+    display: flex;
+    position: relative;
+    background-color: white;
+    /* top: 10vh; */
+    width: 70%;
+    height: 400px;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%,0%);
+    justify-content:space-between;
+    border: 1px solid black;
+    border-radius: 8px;
+    visibility: hidden;
+    
+}
+
+
+.result-box .chart-box,#result{
+  position: relative;
+  width: 28vw;
+  height:30vh;
+
+
+  /* background-color: aqua; */
+}
+
+.result-box .chart-box{
+  margin-left: 2vw;
+}
+.outline{
+  position: relative;
+  height: 600px;
+  /* background-color: #3fa46a; */
+  margin-top: 10em;
+  display: flex;
+  align-items: center;
+}
+#result{
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2vw;
+}
+
+
+@media all and (max-width:1080px) {
+  .disease-recognition-box{
+    flex-direction: column;
+    height:auto;
+    justify-content:start;
+  }
+  .disease-recognition-box div{
+    top: 0%;
+  }
+
+  #uploading-box,#prediction-box{
+    width: 70vw;
+    height: 70vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .next-image{
+    visibility: hidden;
+  }
+
+  .outline{
+    margin-top: 0em;
+    height: 800px;
+  }
+  .result-box{
+    flex-direction: column;
+    height: 700px;
+    justify-content:space-evenly;
+  }
+
+  .chart-box{
+    width: 100%;
+    height:200px;
+  }
+
+  .result-box .chart-box,#result{
+    position: relative;
+    width: 90%;
+  }
+}
+/* #result h1{
+  font-size: 60px;
+} */
+@keyframes spinner-line-fade-more {
+    0%, 100% {
+      opacity: 0; /* minimum opacity */
+    }
+    1% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes spinner-line-fade-quick {
+    0%, 39%, 100% {
+      opacity: 0.25; /* minimum opacity */
+    }
+    40% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes spinner-line-fade-default {
+    0%, 100% {
+      opacity: 0.22; /* minimum opacity */
+    }
+    1% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes spinner-line-shrink {
+    0%, 25%, 100% {
+      /* minimum scale and opacity */
+      transform: scale(0.5);
+      opacity: 0.25;
+    }
+    26% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tomatodisease-edc98",
+  "private_key_id": "74e98446dcbc1ad07fdf1976872facb63bb5591e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQChl+VNoCuYGZx9\nKo1WkaoKnT0KCv79Vgu8hEVrmiDA/H32X4MHzk2oBB3c95c7xC9XMRnuoMxmRVBa\nIO+obc5kXwyp/D1o3tpHadGW7XK9+ilPVzPRIqMnWkibxERSWgyJuNTs3/AB5wS0\nOLqLEr9lV5D712xr3ptB85/fHxmZcY1IMsuGOj7x+4oKGBUtJURdyNKm7zuwfNhp\nXeOnstwuyKzL/RiwM2Fe5kz4yacC/VVxaM8joQ03LU25XIm/7I4cjINZM7BZYseH\nSvmBTG2Biw34PQ6kz25JYbcu0PBi1MakUMTGqspjREwijOQzWxaL/k+g5g+m7qFV\nt6FtskElAgMBAAECggEAC2m7xY+IPLIkYhfBC0n2+VBxOPYdW925rvslnwuwAAll\nSSMmUUUSKYl+5XYsPYml8VHTu82qGhgPrInye1IkF2U6MwBQgwloX85awf7r0Xyr\nccHeNEluvg8LnUrPq4RWKdz+1usbG7tKEwOFs2Bj2b/FSvBEZVr/2rjfBAaBi5uD\ni8kwZu19kOPa+A3xD4cuxJyKtwrvW6KBEhkc8/a0LcPnlKTkXd8T2IxULdCllUTB\n8rfCgoBV6DuJyFmvesu/fZ3OAWUXLvK3y3LLF8LRrJQFY5LdA+M/aqgHZJH7mo0Q\nwOtniUbU+qLviVNjpQQ53oH6iWuXQ2dfHVU9gDVQ6QKBgQDOpybLngCw8NejaPUs\nRd6RbeAPSk+GaJsXNlQ23Syn0xjJy87DSHt+SpWK+I7gqQ7P3Mntu79wnumCgG4M\nrDJJ0Ul5/Sn0IsF05kM4BQg29+ZM8J4XgLfzkAstxIS6WQpJPvc39tHnbIHC+XQe\nrfoL3+T85urvrV5DyAky6wtnPQKBgQDILjex+Ur2eKJhf3IhRrjEHwbtuM+/UKfS\n1iPtzLbIjbweNCEPOG8wPSLFj2n4gVGa8a0Ycu/0eRpFifUX4YnGV0ZSEA4u3JUy\nfJsowOST7asdt95suPnjLPWU7WUTWGnk3INEdgJTHQlmyXLBw/AZKdjAFj0tqdwb\nUAXMKTQgCQKBgQCBsGLnfERAxxT9Z3weCccxC3yG/ALGflV+jsjxGYLR2+f9lJsw\n8QcXbeVFrtGz6kTybESJnr75BbHUBZeK+nIg42gyV5ABt+Ii4/Mhb/8EyDTO6l68\nrzpCb46kbWVCsWiEKTDq/Uoj63PQEc8vBc4br6o8kQq12d6DuUEUpG+mnQKBgBWd\nB95rcDCUbdPhEs2M+T4Tq4fXQHcDmlslS9PNGp8kzn7kWf1utnKa5zo1ddei/tCf\n73SIVGgs+y0u7AucCmgj3C/YE+/zWRiOY6JO0V83dhZLV/SdND3XCNz/lL41+ZkA\nRhwKMc4PgIhcj8tkAHR3FDQJMqnPgThht36HpF0hAoGBAJzEo8rEbh5ZlVbcx6rH\nuAreKrGr+MtARh8VD751gy3C5WK0IJVKCqld7JUva7o8lfbcU7X0mhifuvAlJ12z\n6ltpMTgBaxWJGHqgdOlcQmVtzCyAoQFpuxiZhT+Bibh/1pqJpnPSczUAI3LMDZPL\n+LZ/HWY5WxEQUEQokdxdz+nT\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-ket14@tomatodisease-edc98.iam.gserviceaccount.com",
+  "client_id": "100546621873445452023",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-ket14%40tomatodisease-edc98.iam.gserviceaccount.com"
+}

@@ -1,0 +1,189 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% endblock %}
+{% block csslist %}
+<link rel="stylesheet"   href='{% static "tomato_disease_info_app/css/info2.css" %}'>
+{% endblock %}
+
+{% block title %}토마토질병 - 아메리카잎굴파리{% endblock%}
+
+{% block content %}
+
+<div class="main_field">
+	<div class="content_field">
+		<ul>
+			<li>
+				<div class="disease-main-content">
+					<div class="photoSch">
+						<table class="gridPhoto" id="oInputTable">
+							<!-- 스타일제거시 테이블형태 유지를 위해 보더를 준다 -->
+							<colgroup>
+								<col width="200px">
+								<col width="120px">
+								<col width="*">
+							</colgroup>
+							<tbody class='flexible'>
+								<tr>
+									<div class="title_img">
+									<td rowspan="7"><img id="image"
+										src="{% static 'images/disease_info/cat3/cat3_1.jpg' %}"></td>
+									</div>
+								</tr>
+								<tr>
+									<!-- <td rowspan="4">
+										<img width="200" height="200"
+											src="{% static 'images/disease_info/cat1/cat1_1.jpg' %}">
+									</td> -->
+
+
+                                    <!-- 충해 html 스타일  -->
+									<td width=200px><span class="titlePhoto" >한글명</span></td>
+									<td>아메리카잎굴파리 </td>
+								</tr>
+                                <tr>
+									<td width=200px><span class="titlePhoto" >속종명</span></td>
+									<td>潰瘍病</td>
+								</tr>
+								<tr>
+									<td width=200px><span class="titlePhoto" >목 / 과명</span></td>
+									<td>潰瘍病</td>
+								</tr>
+								<tr>
+									<td width=200px><span class="titlePhoto" >    명명년도 / 명명자</span></td>
+									<td>Bacterial canker</td>
+								</tr>
+								<tr>
+									<td width=200px><span class="titlePhoto" >작물명</span></td>
+									<td>토마토</td>
+								</tr>
+							</tbody>
+						</table>
+			</li>
+
+			<li>
+				<!-- <ul>
+					<li class="disease_title">
+						<h4> 병원체 정보</h4>
+					</li>
+				</ul> -->
+
+                <ul>
+					<li>
+						<h5>분포정보</h5>
+					</li>
+					<li class="article">
+						전국
+					</li>
+				</ul>
+                <ul>
+					<li>
+						<h5>형태정보</h5>
+					</li>
+					<li class="article">
+						아메리카잎굴파리 유충은 구더기 모양으로 몸길이가 1.9～2.1㎜로 황색이며, 번데기는 장타원형으로 길이는 1.3～2.3㎜로 황갈색이다. 성충은 작은 파리 모양이며 날개가 있다. 암컷 성충은 수컷보다 약간 크고 배끝에 잘 발달된 산란관을 가진다. 몸길이는 2～3㎜정도로 몸색깔은 노랑과 검정이 조합되어 있고, 가슴 등판은 검정색이다. 알은 0.2～0.3㎜로 약간 투명하다. 유충은 황색 또는 담갈색이다. 번데기는 2mm 정도로서 갈색을 띤다.
+					</li>
+				</ul>
+
+				<ul>
+					<ul>
+						<li class="disease_title">
+							<h4> 일반정보</h4>
+						</li>
+					</ul>
+
+				</ul>
+
+				<ul>
+					<li>
+						<h5>생태정보</h5>
+					</li>
+					<li class="article">
+						성충은 300~400개를 산란하며, 알은 대부분 잎의 앞면에 산란하지만 뒷면에 산란하는 경우도 있다. 우리나라에서는 1994년 1월 전남광주 광산구 거베라 하우스에서 최초 발견되었으며, 유럽으로 부터 화훼류 수입 시 침입된 것으로 추정하고 있다. 국내에서 노지 월동 여부는 불확실하나, 시설에서는 휴면없이 연중 발생하므로 15회 이상 발생할 수 있다. 예찰은 황색끈끈이트랩을 이용하여 예찰할 수 있다. 아메카잎굴파리는 온실에서는 연중 발생하나, 노지에서는 7～8월에 주로 발생한다. 발육단계는 알-유충(1～3령)-번데기-성충을 거치며, 발육기간은 25℃에서 알 2.7일, 유충 4.6일, 번데기 9.3일이다. 성충의 산란수는 27℃에서 279개이고, 수명은 13.0일이다. 암컷은 날카로운 산란관으로 잎의 표면에 구멍을 뚫고 즙액을 먹기도 하고, 일부 구멍에는 1개씩 산란을 한다. 부화한 유충은 곧바로 잎을 뚫고 들어가 3령까지 엽육 속에서 생활한다. 번데기가 되기 전 노숙 유충이 되면 잎 밖으로 탈출하여 지면으로 떨어져 적당히 습한 구석진 곳에서 번데기가 된다.
+					</li>
+				</ul>
+
+
+				<ul>
+					<li>
+						<h5>피해정보</h5>
+					</li>
+					<li class="article">
+						유충은 잎에 구불구불한 굴(터널)을 뚫어 가해하며, 성충은 잎에 붙어 즙을 핥아먹거나 산란하여 잎에 작은 반점을 남기는 피해를 준다. 피해는 국화과(국화, 상추), 가지과(가지, 토마토), 박과(수박, 오이, 참외, 호박, 멜론), 미나리과(셀러리), 쥐손이풀과(거베라) 등에서 나타난다. 유충이 엽육 속에서 굴을 파고 다니면서 가해하며 피해 흔적이 흰색으로 보인다. 아메리카잎굴파리 성충과 유충이 피해를 주는데, 유충은 잎에 구불구불한 굴(터널)을 뚫고 다니며 엽육을 갉아 먹어 잎에 흰색의 선이 나타난다. 성충은 잎에 흡집을 내어 즙을 핥아 먹거나 산란하여 작은 반점을 남기는 피해를 준다. 피해가 많을 경우 광합성 능력이 떨어지고, 잎이 위축되며 심하면 잎 전체가 갈색으로 말라 죽는다.
+					</li>
+				</ul>
+
+				<ul>
+					<li>
+						<h5>방제방법</h5>
+					</li>
+					<li class="article">
+						시설재배지에서는 방충망을 설치하여 성충의 유입을 차단시킨다. 유충의 피해가 없는 건전한 묘를 정식한다. 아메리카잎굴파리는 잎에 피해를 주고 과실에는 직접 영향을 주지 않기 때문에 피해가 직접 손실로 연결되지 않는 경우가 많다. 특히 잎굴파리의 피해는 과거에 비해 현저히 감소하였다. 이러한 원인은 자연 생태계에 존재하는 잎굴파리 유충 기생성 천적이 많기 때문이다. 특히, 도시 텃밭은 시설과 달리 외부에 노출되어 있어 굴파리민좀벌(Chrysocharis pentheus) 등 토착천적의 접근이 쉬워 잎굴파리의 밀도를 크게 억제한다. 따라서 굳이 약제를 사용하여 방제할 필요는 없다.
+					</li>
+				</ul>
+
+
+			</li>
+
+			<li>
+				<br><br>
+				<h4>병 사진정보</h4>
+
+				<div class="imgpanel" >
+					<div class="container" id="gallery">
+					<img src="{% static 'images/disease_info/cat3/cat3_1.jpg' %}" alt="">
+					
+					<!-- <div id="myModal" class="modal">
+							<span class="close" onclick="document.getElementById('myModal').style.display=none">&times;</span>
+						<img class src="modal-content" id="modal-image" alt="">
+
+						<div id="caption"></div>
+					</div> -->
+
+					<img src="{% static 'images/disease_info/cat3/cat3_2.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat3/cat3_3.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat3/cat3_4.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat3/cat3_5.jpg' %}" alt="">
+
+					</div>
+				</div>
+					</ul>
+			</div>
+				
+
+			</li>
+
+			<li>
+				출처 : <a href=""></a>
+			</li>
+
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+{% endblock %}
+<!-- <script type="text/javascript">
+	//get the modal
+	var modal = document.getElementById('myModal');
+
+	var img = $('.myImg');
+	var modalImg = $("img01");
+	var captionText = document.getElementById("caption");
+	$('.myImg').click(function(){
+		modal.style.display = "block";
+		var newSrc = this.src;
+		modalImg.attr('src', newSrc);
+		captionText.innerHTML = this.alt;
+	})
+
+	// get the <span> element that closes the modal
+		var span=document.getElementById("close")[0];
+	// When the user clicks on <span> (x), close the modalImg
+		span.onclick = function(){
+			modal.style.display=none;
+		}
+
+</script> -->

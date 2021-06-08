@@ -1,0 +1,201 @@
+.disease-recognition-box{
+  display: flex;
+  position: relative;
+  height:10em;
+  width: 70%;
+  /* background-color: aqua; */
+  left: 50%;
+  top: 20vh;
+  transform: translate(-50%,0%);
+  justify-content:space-between;
+}
+
+.box {
+  margin : 20px; 
+  padding : 30px;
+  border : 2px solid black;
+  border-radius : 5px;
+  color:rgb(3, 3, 3);
+  background-color: rgba( 255, 255, 255, 0.5 );
+  z-index: 0;
+}
+
+/*desktop ver*/
+
+.btndata {
+  width:25%;
+  border : 2px solid black;
+  border-radius : 5px;
+  font-weight: bold;
+  padding: 10px;
+  margin-left: 5%;
+  text-align: center;
+  border-radius: 10px;
+  background-color:  rgb(94, 155, 119);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
+  cursor: pointer;
+}
+
+.btndata:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+}
+
+table.type01 {
+  border-collapse: collapse;
+  text-align: center;
+  line-height: 1.5;
+  height:30px;
+  width:100%;
+  margin : 20px 10px;
+}
+table.type01 th {
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border: 3px solid rgb(3, 3, 3);
+  background-color: rgb(94, 155, 119);
+}
+table.type01 td {
+  padding: 10px;
+  vertical-align: top;
+  border: 3px solid rgb(3, 3, 3);
+}
+
+.predict {
+  display:flex;
+  text-align: center;
+  padding : 20px;
+  padding-left: 12%;
+  border : 3px solid black;
+  border-radius : 40px;
+  background-color: rgb(223, 233, 230);
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.it{
+  font-weight:normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+}
+.s_it{
+  font-weight:normal;
+  font-weight: bold;
+  font-size: 15px;
+  display: none;
+  text-align: center;
+}
+
+.price{
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(26, 131, 70);
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+/*small ver*/
+@media screen and (max-width: 1150px) {
+  table.type01{width: 100%;}
+  table.type01 tr {display: inline-block;}
+  table.type01 th {width: 280px;}
+  table.type01 td {display:block; width: auto;}
+  .it{text-align: center;}
+  .predict{margin-left: 5%; margin-right: 5%; padding-left: 25%;}
+  .btndata { width:182px; }
+}
+
+/*tablet ver*/
+@media screen and (max-width: 767px){
+  table.type01 th {width:150px;}
+  .it{display: none;}
+  .predict{display: block; padding-left: 0%;}
+  .s_it{padding: 5px; text-align: center; display:block;}
+  .btndata { width:90%; }
+}
+
+/*mobile ver*/
+@media screen and (max-width: 479px){
+  table.type01 th {width:80px;}
+  .predict{width:auto;}
+}
+
+@media screen and (max-width: 336px){
+  table.type01 th {display: none;}
+  table.type01 td {font-size: 10px;}
+  .s_it{font-size: 10px;}
+  .price{font-size: 10px;}
+  .btndata { width:182px; }
+}
+/*small ver*/
+@media screen and (max-width: 1150px) {
+  table.type01{width: 100%;}
+  table.type01 tr {display: inline-block;}
+  table.type01 th {width: 280px;}
+  table.type01 td {display:block; width: auto;}
+  .it{text-align: center;}
+  .predict{margin-left: 5%; margin-right: 5%; padding-left: 25%;}
+}
+
+/*tablet ver*/
+@media screen and (max-width: 767px){
+  table.type01 th {width:150px;}
+  .it{display: none;}
+  .predict{display: block; padding-left: 0%;}
+  .s_it{padding: 5px; text-align: center; display:block;}
+}
+
+/*mobile ver*/
+@media screen and (max-width: 479px){
+  table.type01 th {width:80px;}
+  .predict{width:auto;}
+}
+
+@media screen and (max-width: 336px){
+  table.type01 th {display: none;}
+  table.type01 td {font-size: 10px;}
+  .s_it{font-size: 10px;}
+  .price{font-size: 10px;}
+}
+@keyframes spinner-line-fade-more {
+    0%, 100% {
+      opacity: 0; /* minimum opacity */
+    }
+    1% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes spinner-line-fade-quick {
+    0%, 39%, 100% {
+      opacity: 0.25; /* minimum opacity */
+    }
+    40% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes spinner-line-fade-default {
+    0%, 100% {
+      opacity: 0.22; /* minimum opacity */
+    }
+    1% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes spinner-line-shrink {
+    0%, 25%, 100% {
+      /* minimum scale and opacity */
+      transform: scale(0.5);
+      opacity: 0.25;
+    }
+    26% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% endblock %}
+{% block csslist %}
+<link rel="stylesheet"   href='{% static "tomato_disease_info_app/css/info2.css" %}'>
+{% endblock %}
+
+{% block title %}토마토질병 - 흰가루병{% endblock%}
+
+{% block content %}
+
+<div class="main_field">
+	<div class="content_field">
+		<ul>
+			<li>
+				<div class="disease-main-content">
+					<div class="photoSch">
+						<table class="gridPhoto" id="oInputTable">
+							<!-- 스타일제거시 테이블형태 유지를 위해 보더를 준다 -->
+							<colgroup>
+								<col width="200px">
+								<col width="120px">
+								<col width="*">
+							</colgroup>
+							<tbody class='flexible'>
+								<tr>
+									<div class="title_img">
+									<td rowspan="5"><img id="image"
+										src="{% static 'images/disease_info/cat8/cat8_1.png' %}"></td>
+									</div>
+								</tr>
+								<tr>
+									<!-- <td rowspan="4">
+										<img width="200" height="200"
+											src="{% static 'images/disease_info/cat1/cat1_1.jpg' %}">
+									</td> -->
+									<td><span class="titlePhoto">한글명</span></td>
+									<td>흰가루병</td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">한문명</span></td>
+									<td>白粉病</td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">영문명</span></td>
+									<td>Powdery mildew    </td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">작물명</span></td>
+									<td>토마토</td>
+								</tr>
+							</tbody>
+						</table>
+			</li>
+
+			<li>
+				<ul>
+					<li class="disease_title">
+						<h4> 병원체 정보</h4>
+					</li>
+				</ul>
+				<ul>
+					<li id=info1>
+						<h3></h3>
+						<h5>병원체명<h5>
+					</li>
+				</ul>
+				<ul>
+					<li class=article>
+						ㆍOidiopsis taurica   (Lev.) E.S. Salmon<br>
+        [유성세대Leveillula taurica   (Lev.) Arnaud ]<br>
+ㆍErysiphe cichoracearum   DC.<br>
+					</li>
+					<ul>
+						<li class="disease_title">
+							<h4> 일반정보</h4>
+						</li>
+					</ul>
+
+				</ul>
+
+				<ul>
+					<li>
+						<h5>발생환경</h5>
+					</li>
+					<li class="article">
+						노지재배에서는 피해가 매우 적으나 시설재배에서 많이 발생한다. 온도가 서늘한 봄과 가을에 많이 발생하며, 다습한 조건보다는 건조한 환경하에서 피해가 크다. 분생포자 또는 균사의 형태로 병든 식물체의 잔재에서 겨울을 지내고 1차 전염원이 되며, 그 후의 발병은 분생포자가 공기전염되어 계속적으로 발생한다. 발병 적온은 25～28℃이다.
+					</li>
+				</ul>
+
+
+				<ul>
+					<li>
+						<h5>증상설명</h5>
+					</li>
+					<li class="article">
+						주로 잎에 발생하며, 심하면 잎자루나 과경에도 발생한다. 잎에서는 처음 흰가루가 불규칙한 모양으로 점점이 나타나고, 진전되면 잎 전체가 흰가루로 뒤 덮힌다. 심하게 발생하면 잎의 피해부가 누렇게 되고 말라 죽는다.
+					</li>
+				</ul>
+
+				<ul>
+				<ul>
+					<li>
+						<h5>방제방법</h5>
+					</li>
+					<li class="article">
+                        - 병든 잎은 일찍 제거 소각 또는 묻는다.<br>
+                        - 밀식을 피하고 잎이 너무 무성하지 않도록 관리한다.<br>
+                        - 하우스 내 환기 시 너무 건조하지 않도록 한다.<br>
+                        - 병원균의 밀도 증가가 빠르므로 발병 초기에 관리를 잘 해야 한다.<br>
+					</li>
+				</ul>
+
+
+			</li>
+
+			<li>
+				<br><br>
+				<h4>병 사진정보</h4>
+
+				<div class="imgpanel" >
+					<div class="container" id="gallery">
+					<img src="{% static 'images/disease_info/cat8/cat8_1.png' %}" alt="">
+					
+					<!-- <div id="myModal" class="modal">
+							<span class="close" onclick="document.getElementById('myModal').style.display=none">&times;</span>
+						<img class src="modal-content" id="modal-image" alt="">
+
+						<div id="caption"></div>
+					</div> -->
+
+					<img src="{% static 'images/disease_info/cat8/cat8_2.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat8/cat8_3.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat8/cat8_4.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat8/cat8_5.jpg' %}" alt="">
+
+					</div>
+				</div>
+					</ul>
+			</div>
+				
+
+			</li>
+
+			<li>
+                <ul>
+				<li>
+                    <h5>출처</h5>
+                <li class="article">
+                <a href="https://ncpms.rda.go.kr/npms/ImageSearchInfoR4.np?detailKey=D00001534&moveKey=&queryFlag=V&upperNm=%EC%B1%84%EC%86%8C&kncrCode=VC010803&kncrNm=%ED%86%A0%EB%A7%88%ED%86%A0&nextAction=%2Fnpms%2FImageSearchDtlR4.np&finalAction=&flagCode=S&sPriyClCode=">국가농작물병해충관리시스템 NCPMS
+                    병해충정보  >  작물별 도감정보</a><br>
+                </li>
+                </li> 
+                </ul>
+            </li>
+
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+{% endblock %}
+<!-- <script type="text/javascript">
+	//get the modal
+	var modal = document.getElementById('myModal');
+
+	var img = $('.myImg');
+	var modalImg = $("img01");
+	var captionText = document.getElementById("caption");
+	$('.myImg').click(function(){
+		modal.style.display = "block";
+		var newSrc = this.src;
+		modalImg.attr('src', newSrc);
+		captionText.innerHTML = this.alt;
+	})
+
+	// get the <span> element that closes the modal
+		var span=document.getElementById("close")[0];
+	// When the user clicks on <span> (x), close the modalImg
+		span.onclick = function(){
+			modal.style.display=none;
+		}
+
+</script> -->

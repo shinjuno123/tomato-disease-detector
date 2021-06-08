@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% endblock %}
+{% block csslist %}
+<link rel="stylesheet"   href='{% static "tomato_disease_info_app/css/info2.css" %}'>
+{% endblock %}
+
+{% block title %}토마토질병 - 궤양병{% endblock%}
+
+{% block content %}
+
+<div class="main_field">
+	<div class="content_field">
+		<ul>
+			<li>
+				<div class="disease-main-content">
+					<div class="photoSch">
+						<table class="gridPhoto" id="oInputTable">
+							<!-- 스타일제거시 테이블형태 유지를 위해 보더를 준다 -->
+							<colgroup>
+								<col width="200px">
+								<col width="120px">
+								<col width="*">
+							</colgroup>
+							<tbody class='flexible'>
+								<tr>
+									<div class="title_img">
+									<td rowspan="5"><img id="image"
+										src="{% static 'images/disease_info/cat4/cat4_1.jpg' %}"></td>
+									</div>
+								</tr>
+								<tr>
+									<!-- <td rowspan="4">
+										<img width="200" height="200"
+											src="{% static 'images/disease_info/cat1/cat1_1.jpg' %}">
+									</td> -->
+									<td><span class="titlePhoto">한글명</span></td>
+									<td>잎곰팡이병</td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">한문명</span></td>
+									<td>葉黴病</td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">영문명</span></td>
+									<td>Leaf mold</td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">작물명</span></td>
+									<td>토마토</td>
+								</tr>
+							</tbody>
+						</table>
+			</li>
+
+			<li>
+				<ul>
+					<li class="disease_title">
+						<h4> 병원체 정보</h4>
+					</li>
+				</ul>
+				<ul>
+					<li id=info1>
+						<h3></h3>
+						<h5>병원체명<h5>
+					</li>
+				</ul>
+				<ul>
+					<li class=article>
+						ㆍFulvia fulva   (Cooke) Cif.  <br>
+        [=Cladosporium fulvum   Cooke ]   
+					</li>
+					<ul>
+						<li class="disease_title">
+							<h4> 일반정보</h4>
+						</li>
+					</ul>
+
+				</ul>
+
+				<ul>
+					<li>
+						<h5>발생환경</h5>
+					</li>
+					<li class="article">
+						병원균은 병든 잎이나 종자 등에서 겨울을 지내고 1차 전염원이 되나, 시설재배에서는 병원균이 각종 농자재에 붙어 겨울을 지내기도 한다. 2차 전염은 병반상에 형성된 포자가 전반되어 잎의 기공을 통하여 침입하여 발병된다. 20～25℃ 의 온도조건하에서 피해가 크며, 특히 시설재배지에서 심하게 발생한다.
+					</li>
+				</ul>
+
+
+				<ul>
+					<li>
+						<h5>증상설명</h5>
+					</li>
+					<li class="article">
+						잎에 발생한다. 처음에는 잎의 표면에 흰색 또는 담회색의 반점으로 나타나고 진전되면 황갈색 병반으로 확대된다. 잎 뒷면에 담갈색의 병반이 형성되는데, 병반상에는 갈색의 곰팡이가 융단처럼 밀생되어 있는 것을 볼 수 있으며, 오래되면 균총이 갈색에서 연한 자색으로 변한다. 주로 아래 잎에서 피해가 크며, 심하면 아랫잎 전체가 누렇게되고 말라 죽는다.
+					</li>
+				</ul>
+
+				<ul>
+					<li>
+						<h5>방제방법</h5>
+					</li>
+					<li class="article">
+						- 병든 잎을 신속히 제거한다.<br>
+                        - 90%이상의 상대습도가 유지되지 않도록 한다.<br>
+                        - 통풍이 잘되게 하고 밀식하지 않는다.<br>
+                        - 건전한 종자를 사용하고, 깨끗한 자재를 사용한다.<br>
+                        - 질소질 비료의 과용을 피한다.<br>
+					</li>
+				</ul>
+
+
+			</li>
+
+			<li>
+				<br><br>
+				<h4>병 사진정보</h4>
+
+				<div class="imgpanel" >
+					<div class="container" id="gallery">
+					<img src="{% static 'images/disease_info/cat4/cat4_1.jpg' %}" alt="">
+					
+					<!-- <div id="myModal" class="modal">
+							<span class="close" onclick="document.getElementById('myModal').style.display=none">&times;</span>
+						<img class src="modal-content" id="modal-image" alt="">
+
+						<div id="caption"></div>
+					</div> -->
+
+					<img src="{% static 'images/disease_info/cat4/cat4_2.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat4/cat4_3.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat4/cat4_4.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat4/cat4_5.jpg' %}" alt="">
+
+					</div>
+				</div>
+					</ul>
+			</div>
+				
+
+			</li>
+            
+			<li>
+                <br><br>
+				<ul>
+                    <h5>출처 : <a href=""></a></h5>
+                </ul>
+			</li>
+
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+{% endblock %}
+<!-- <script type="text/javascript">
+	//get the modal
+	var modal = document.getElementById('myModal');
+
+	var img = $('.myImg');
+	var modalImg = $("img01");
+	var captionText = document.getElementById("caption");
+	$('.myImg').click(function(){
+		modal.style.display = "block";
+		var newSrc = this.src;
+		modalImg.attr('src', newSrc);
+		captionText.innerHTML = this.alt;
+	})
+
+	// get the <span> element that closes the modal
+		var span=document.getElementById("close")[0];
+	// When the user clicks on <span> (x), close the modalImg
+		span.onclick = function(){
+			modal.style.display=none;
+		}
+
+</script> -->

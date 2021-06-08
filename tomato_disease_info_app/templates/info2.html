@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% endblock %}
+{% block csslist %}
+<link rel="stylesheet"   href='{% static "tomato_disease_info_app/css/info2.css" %}'>
+{% endblock %}
+
+{% block title %}토마토질병 - 궤양병{% endblock%}
+
+{% block content %}
+
+<div class="main_field">
+	<div class="content_field">
+		<ul>
+			<li>
+				<div class="disease-main-content">
+					<div class="photoSch">
+						<table class="gridPhoto" id="oInputTable">
+							<!-- 스타일제거시 테이블형태 유지를 위해 보더를 준다 -->
+							<colgroup>
+								<col width="200px">
+								<col width="120px">
+								<col width="*">
+							</colgroup>
+							<tbody class='flexible'>
+								<tr>
+									<div class="title_img">
+									<td rowspan="5"><img id="image"
+										src="{% static 'images/disease_info/cat2/cat2_1.jpg' %}"></td>
+									</div>
+								</tr>
+								<tr>
+									<!-- <td rowspan="4">
+										<img width="200" height="200"
+											src="{% static 'images/disease_info/cat1/cat1_1.jpg' %}">
+									</td> -->
+									<td><span class="titlePhoto">한글명</span></td>
+									<td>궤양병</td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">한문명</span></td>
+									<td>潰瘍病</td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">영문명</span></td>
+									<td>Bacterial canker</td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">작물명</span></td>
+									<td>토마토</td>
+								</tr>
+							</tbody>
+						</table>
+			</li>
+
+			<li>
+				<ul>
+					<li class="disease_title">
+						<h4> 병원체 정보</h4>
+					</li>
+				</ul>
+				<ul>
+					<li id=info1>
+						<h3></h3>
+						<h5>병원체명<h5>
+					</li>
+				</ul>
+				<ul>
+					<li class=article>
+						ㆍClavibacter michiganensis subsp.   <br>
+						ㆍmichiganensis (Smith) Davis et al.   
+					</li>
+					<ul>
+						<li class="disease_title">
+							<h4> 일반정보</h4>
+						</li>
+					</ul>
+
+				</ul>
+
+				<ul>
+					<li>
+						<h5>발생환경</h5>
+					</li>
+					<li class="article">
+						병원균은 종자내에서 생존하며, 보통 2년 6개월간 생존할 수 있다. 병든 열매에서 채종한 것은 30~53%의 발병율을 나타낸다는 보고가 있다. 토양중에서도 2년 이상 생존하며, 2차전염은 비바람, 해충 등에 의해 일어난다. 뿌리의 상처, 적아, 적심 등에 의해서도 잘 전염된다. 발병은 25~27℃에서 잘 되고, 고온인 한여름에는 거의 진전되지 않는다. 최근 외국에서 수입한 품종을 재배하는 시설재배 포장에서 병발생이 확인되었다.
+					</li>
+				</ul>
+
+
+				<ul>
+					<li>
+						<h5>증상설명</h5>
+					</li>
+					<li class="article">
+						잎, 줄기, 열매에 발생한다. 잎자루에 직경 1~2㎜크기의 담갈색 내지 황갈색 점무늬로 나타나고, 진전되면 궤양증상으로 나타난다. 잎은 가장자리부터 말라 시들고, 엽맥 사이는 황변하며, 후에 갈색으로 변해 마른다. 줄기의 표면이 감염되면 표피가 갈라지고, 궤양증상이 나타난다. 열매에는 수침상의 점무늬가 형성되어 약간 돌출한 갈색의 궤양증상으로 나타난다. 줄기의 유관속이 감염되면 그루 전체가 시들어 죽는다. 병든 줄기를 가로로 잘라보면 유관속이 갈색으로 변해 있으며, 악취는 나지 않는다.
+					</li>
+				</ul>
+
+				<ul>
+					<li>
+						<h5>방제방법</h5>
+					</li>
+					<li class="article">
+						- 적아 또는 적심 등 식물에 상처를 줄 수 있는 작업은 이슬이 있는 오전은 하지않는다.<br>
+						- 작업기구는 뜨거운 물 등으로 소독한다.<br>
+						- 건전한 종자를 사용하며, 종자소독하여 사용한다.<br>
+						- 발병된 밭은 다른 작물로 1년 이상 돌려짓기한다.<br>
+						- 등록약제를 이용하여 방제한다.
+					</li>
+				</ul>
+
+
+			</li>
+
+			<li>
+				<br><br>
+				<h4>병 사진정보</h4>
+
+				<div class="imgpanel" >
+					<div class="container" id="gallery">
+					<img src="{% static 'images/disease_info/cat2/cat2_1.jpg' %}" alt="">
+					
+					<!-- <div id="myModal" class="modal">
+							<span class="close" onclick="document.getElementById('myModal').style.display=none">&times;</span>
+						<img class src="modal-content" id="modal-image" alt="">
+
+						<div id="caption"></div>
+					</div> -->
+
+					<img src="{% static 'images/disease_info/cat2/cat2_2.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat2/cat2_3.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat2/cat2_4.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat2/cat2_5.jpg' %}" alt="">
+
+					</div>
+				</div>
+					</ul>
+			</div>
+				
+
+			</li>
+
+			<li>
+				출처 : <a href=""></a>
+			</li>
+
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+{% endblock %}
+<!-- <script type="text/javascript">
+	//get the modal
+	var modal = document.getElementById('myModal');
+
+	var img = $('.myImg');
+	var modalImg = $("img01");
+	var captionText = document.getElementById("caption");
+	$('.myImg').click(function(){
+		modal.style.display = "block";
+		var newSrc = this.src;
+		modalImg.attr('src', newSrc);
+		captionText.innerHTML = this.alt;
+	})
+
+	// get the <span> element that closes the modal
+		var span=document.getElementById("close")[0];
+	// When the user clicks on <span> (x), close the modalImg
+		span.onclick = function(){
+			modal.style.display=none;
+		}
+
+</script> -->

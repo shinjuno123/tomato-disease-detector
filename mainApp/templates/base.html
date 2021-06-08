@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "mainApp/css/reset.css" %}'>
+    <link rel="stylesheet" href='{% static "mainApp/css/base.css" %}'>
+    {% block csslist %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <!-- <li class="logo"><a href="{% url 'mainApp:mainApp' %}"><img src="{% static 'images/logo_no_background.png' %}" alt=""></a></li> -->
+                <ol class="menu-li">
+                    <li id="open"><a href="#">▼</a></li>
+                    <li><a href="{% url 'tomato_disease_recognition_app:tomato_disease_recognition' %}">토마토 질병인식</a></li>
+                    <li><a href="{% url 'price_app:priceApp' %}">토마토 가격예측</a></li>
+                    <li><a href="{% url 'tomato_disease_info_app:tomato_disease_info' %}">토마토 질병도감</a></li>
+                    <li><a href="{% url 'tomato_site_info:tomato_site_info' %}">사이트 설명</a></li>
+                </ol>
+            </ul>
+        </nav>
+    </header>
+
+    <main align="center">
+        {% block content %}
+          
+        {% endblock %}
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="{% static 'mainApp/js/base.js' %}"></script>
+</body>
+</html>

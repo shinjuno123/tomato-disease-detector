@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block csslist %}
+<link rel="stylesheet" href='{% static "tomato_disease_recognition_app/css/tomato_disease_recognition.css" %}'>
+{% endblock %}
+
+{% block title %}토마토 질병인식{% endblock %}
+
+{% block content %}
+
+<a href="{% static 'images/disease_info/cat1/cat1_1.jpg' %}" style="color: blue;left:50%;" download>테스트 이미지 다운(클릭)</a><br><br><br>
+<div class="disease-recognition-box" align="center">
+    <div onclick="clickUploadingBox()" ondragover="dragover_handler(event)" ondrop="drop_handler(event)"
+        ondrop="drop_handler(event)" id="uploading-box">
+        <input type="file" value="파일">
+        <span>이미지를 드래그 또는 네모칸을 클릭하세요</span>
+    </div>
+
+    <div class="next-image"><img src="{% static 'images/next_icon.png' %}" alt="->"></div>
+    <div id="prediction-box"></div>
+</div>
+<div class="outline">
+    <div class="result-box" >
+
+        <div class="chart-box">
+            <!-- <canvas id="myChart" style="height: 500px;"></canvas> -->
+        </div>
+
+        <div class="next-image"><img src="{% static 'images/next_icon.png' %}" alt="->"></div>
+        <div id='result'>
+            <h1>잎마름병입니다.</h1>
+        </div>
+
+    </div>
+</div>
+<!-- https://cdn.jsdelivr.net/npm/chart.js -->
+<!-- "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" -->
+<!-- https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js  -->
+<!-- https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.0/chart.js -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.0/chart.js"></script>
+<script src="{% static 'tomato_disease_recognition_app/js/tomato_disease_recognition.js' %}"></script>
+{% endblock %}

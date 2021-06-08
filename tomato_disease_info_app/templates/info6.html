@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% endblock %}
+{% block csslist %}
+<link rel="stylesheet"   href='{% static "tomato_disease_info_app/css/info2.css" %}'>
+{% endblock %}
+
+{% block title %}토마토질병 - 토마토퇴록바이러스{% endblock%}
+
+{% block content %}
+
+<div class="main_field">
+	<div class="content_field">
+		<ul>
+			<li>
+				<div class="disease-main-content">
+					<div class="photoSch">
+						<table class="gridPhoto" id="oInputTable">
+							<!-- 스타일제거시 테이블형태 유지를 위해 보더를 준다 -->
+							<colgroup>
+								<col width="200px">
+								<col width="120px">
+								<col width="*">
+							</colgroup>
+							<tbody class='flexible'>
+								<tr>
+									<div class="title_img">
+									<td rowspan="5"><img id="image"
+										src="{% static 'images/disease_info/cat6/cat6_1.jpg' %}"></td>
+									</div>
+								</tr>
+								<tr>
+									<!-- <td rowspan="4">
+										<img width="200" height="200"
+											src="{% static 'images/disease_info/cat1/cat1_1.jpg' %}">
+									</td> -->
+									<td><span class="titlePhoto">한글명</span></td>
+									<td>토마토퇴록바이러스</td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">한문명</span></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">영문명</span></td>
+									<td> Tomato chlorosis virus(ToCV)</td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">작물명</span></td>
+									<td>토마토, 고추, 파프리카, 까마중, 독말풀 등</td>
+								</tr>
+							</tbody>
+						</table>
+			</li>
+
+			<li>
+				<ul>
+					<li class="disease_title">
+						<h4> 병원체 정보</h4>
+					</li>
+				</ul>
+				<ul>
+					<li id=info1>
+						<h3></h3>
+						<h5>병원체명<h5>
+					</li>
+				</ul>
+				<ul>
+					<li class=article>
+						ㆍTomato chlorsis virus(ToCV)
+					</li>
+					<ul>
+						<li class="disease_title">
+							<h4> 일반정보</h4>
+						</li>
+					</ul>
+
+				</ul>
+
+				<ul>
+					<li>
+						<h5>발생환경</h5>
+					</li>
+					<li class="article">
+						가루이류(담배가루이, 온실가루이)가 전염
+					</li>
+				</ul>
+
+
+				<ul>
+					<li>
+						<h5>증상설명</h5>
+					</li>
+					<li class="article">
+						잎의 불규칙적인 퇴록반점, 황화 등 병징<br>
+                        토마토 상품성 및 수량감소 등의 피해발생
+					</li>
+				</ul>
+
+				<ul>
+					<li>
+						<h5>방제방법</h5>
+					</li>
+					<li class="article">
+                        토마토퇴록바이러스(Tomato chlorosis virus, ToCV)는 이전에 소개한 순무황화모자이크바이러스(TYMV)와 같이 국가관리 바이러스로 지정되어 있으며 자연기주로는 토마토, 고추, 파프리카와 토마토 하우스 내외부에 발생하는 기주 잡초 종류로는 망초, 개망초, 보리뺑이, 큰방가지똥, 별꽃, 쇠별꽃, 유럽점나도나물, 까마중, 미국까마중, 황새냉이, 흰명아주, 얼치기완두, 미국자리공, 꽃마리, 주름잎 등 15종 9과로매개충인 가루이류(담배가루이, 온실가루이)에 대한 방제를 철저히 하여야 한다. 병징이 나타나는 감염주는 즉시제거 하여야 하고 하우스로 매개충을 차단하기 위한 방충망을 설치을 의무화 하고 건전한 묘를 사용하여 한다.
+					</li>
+				</ul>
+
+
+			</li>
+
+			<li>
+				<br><br>
+				<h4>병 사진정보</h4>
+
+				<div class="imgpanel" >
+					<div class="container" id="gallery">
+					<img src="{% static 'images/disease_info/cat6/cat6_1.jpg' %}" alt="">
+					
+					<!-- <div id="myModal" class="modal">
+							<span class="close" onclick="document.getElementById('myModal').style.display=none">&times;</span>
+						<img class src="modal-content" id="modal-image" alt="">
+
+						<div id="caption"></div>
+					</div> -->
+
+					<img src="{% static 'images/disease_info/cat6/cat6_2.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat6/cat6_3.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat6/cat6_4.jpg' %}" alt="">
+					<img src="{% static 'images/disease_info/cat6/cat6_5.jpg' %}" alt="">
+
+					</div>
+				</div>
+					</ul>
+			</div>
+				
+
+			</li>
+
+			<li>
+				출처<br>
+                <a href="https://www.kper.or.kr/bbs/board.php?bo_table=altong_bbs&wr_id=87&page=10">https://www.kper.or.kr/bbs/board.php?bo_table=altong_bbs&wr_id=87&page=10</a><br>
+                <a href=" http://www.qia.go.kr/downloadInfoDataWebAction.do?id=135369">https://www.qia.go.kr/downloadInfoDataWebAction.do?id=135369</a>
+			</li>
+
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+{% endblock %}
+<!-- <script type="text/javascript">
+	//get the modal
+	var modal = document.getElementById('myModal');
+
+	var img = $('.myImg');
+	var modalImg = $("img01");
+	var captionText = document.getElementById("caption");
+	$('.myImg').click(function(){
+		modal.style.display = "block";
+		var newSrc = this.src;
+		modalImg.attr('src', newSrc);
+		captionText.innerHTML = this.alt;
+	})
+
+	// get the <span> element that closes the modal
+		var span=document.getElementById("close")[0];
+	// When the user clicks on <span> (x), close the modalImg
+		span.onclick = function(){
+			modal.style.display=none;
+		}
+
+</script> -->

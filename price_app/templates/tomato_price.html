@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block csslist %}
+<!-- 여기다가는 너가 원하는 css link태그를 붙여 -->
+<link rel="stylesheet" href='{% static "priceApp/css/tomato_price.css" %}'>
+{% endblock %}
+
+{% block title %}토마토 가격 예측{% endblock %}
+
+{% block content %}
+
+<!-- 여기다가 너가 맡은 부분의 메인적인 부분을 작성하면 되 -->
+<div onclick="clickPredict()" class="btndata" id="btndata" type="button">
+    ※  예상가격을 확인하려면 클릭하세요
+</div>
+
+<div class="box">
+    <table class="type01">
+        <div class="it">
+            *10일간 도매(상) 토마토 가격 (단위 : 10kg, 원)
+        </div>
+        <div class="s_it">
+            *10일간 도매(상) 토마토 가격
+        </div>
+        <div class="s_it">
+            (단위 : 10kg, 원)
+        </div>
+        <tr>
+          <th scope="row">날짜</th>
+          {% for date in date %}  
+          <td class="dt">{{date}}</td>
+          {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">가격</th>
+          {% for realprice_01 in realprice_01 %}
+          <td>{{realprice_01}}</td>
+          {% endfor %}
+        </tr>
+    </table>
+    <div class="predict">
+        <div class="s_it">
+            내일의 예상가격▼
+        </div>
+        <div class="it">
+            내일의 예상 가격은 
+        </div>
+        <div class="price" id="price1">
+        </div>
+        <div class="it">
+              입니다
+        </div>
+    </div>
+</div>
+<div class="box">
+    <table class="type01">
+        <div class="it">
+            *10일간 도매(중) 토마토 가격 (단위 : 10kg, 원)
+        </div>
+        <div class="s_it">
+            *10일간 도매(상) 토마토 가격
+        </div>
+        <div class="s_it">
+            (단위 : 10kg, 원)
+        </div>
+        <tr>
+          <th scope="row">날짜</th>
+          {% for date in date %}  
+          <td>{{date}}</td>
+          {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">가격</th>
+          {% for realprice_02 in realprice_02 %}  
+          <td>{{realprice_02}}</td>
+          {% endfor %}
+        </tr>
+    </table>
+    <div class="predict">
+        <div class="s_it">
+            내일의 예상가격▼
+        </div>
+        <div class="it">
+            내일의 예상 가격은
+        </div>
+        <div class="price" id="price2">
+        </div>
+        <div class="it">
+            입니다
+        </div>
+    </div>
+</div>
+<div class="box">
+    <table class="type01">
+        <div class="it">
+            *10일간 소매(상) 토마토 가격 (단위 : 1kg, 원)
+        </div>
+        <div class="s_it">
+            *10일간 도매(상) 토마토 가격
+        </div>
+        <div class="s_it">
+            (단위 : 10kg, 원)
+        </div>
+        <tr>
+          <th scope="row">날짜</th>
+          {% for date in date %}  
+          <td>{{date}}</td>
+          {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">가격</th>
+          {% for realprice_03 in realprice_03 %}  
+          <td>{{realprice_03}}</td>
+          {% endfor %}
+        </tr>
+    </table>
+    <div class="predict">
+        <div class="s_it">
+            내일의 예상가격▼
+        </div>
+        <div class="it">
+            내일의 예상 가격은
+        </div>
+        <div class="price" id="price3">
+
+        </div>
+        <div class="it">
+            입니다
+        </div>
+    </div>
+</div>
+
+
+<!-- 여기 아래다가 js파일 너가 원하는 거 붙이면 되 -->
+<script src="{% static 'priceApp/js/tomato_price.js' %}"></script>
+{% endblock %}
+
+<!-- js 파일은 static폴더에 내가 이 앱이랑 같은 이름의 폴더안에 js css폴더를 따로 만들어 놨어 거기다가 집어 넣고 사용해 -->

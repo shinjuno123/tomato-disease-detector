@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% endblock %}
+{% block csslist %}
+<link rel="stylesheet" href='{% static "tomato_disease_info_app/css/info.css" %}'>
+{% endblock %}
+
+{% block title %}토마토질병 - 점무늬병{% endblock%}
+
+{% block content %}
+
+<div class="main_field">
+	<div class="content_field">
+		<ul>
+			<li>
+				<div class="disease-main-content">
+					<div class="photoSch">
+						<table class="gridPhoto" id="oInputTable">
+							<!-- 스타일제거시 테이블형태 유지를 위해 보더를 준다 -->
+							<colgroup>
+								<col width="200px">
+								<col width="120px">
+								<col width="*">
+							</colgroup>
+							<tbody class='flexible'>
+								<tr>
+									<div class="title_img">
+										<td rowspan="5"><img id="image"
+												src="{% static 'images/disease_info/cat1/cat1_1.jpg' %}"></td>
+									</div>
+								</tr>
+								<tr>
+									<!-- <td rowspan="4">
+										<img width="200" height="200"
+											src="{% static 'images/disease_info/cat1/cat1_1.jpg' %}">
+									</td> -->
+									<td><span class="titlePhoto">한글명</span></td>
+									<td>점무늬병</td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">한문명</span></td>
+									<td>斑點病</td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">영문명</span></td>
+									<td>Gray leaf spot</td>
+								</tr>
+								<tr>
+									<td><span class="titlePhoto">작물명</span></td>
+									<td>토마토</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<ul>
+					<li class="disease_title">
+						<h4> 병원체 정보</h4>
+					</li>
+				</ul>
+				<ul>
+					<li id=info1>
+						<h3></h3>
+						<h5>병원체명<h5>
+					</li>
+				</ul>
+				<ul>
+					<li class=article>
+						ㆍStemphylium solani G.F. Weber
+						ㆍStemphylium lycopersici (Enjoji) Yamamoto
+					</li>
+					<ul>
+						<li class="disease_title">
+							<h4> 일반정보</h4>
+						</li>
+					</ul>
+
+				</ul>
+
+				<ul>
+					<li>
+						<h5>발생환경</h5>
+					</li>
+					<li class="article">
+						병원균은 종자 혹은 병든 부위에서 균사나 분생포자의 형태로 겨울을 지낸 후, 분생포자를 형성하여 공기전염 한다. 고온,다습한 환경의 시설재배 포장에서 많이 발생하며, 병
+						증상은 병원균이 감염된 후 5일 이내에 나타난다.
+					</li>
+				</ul>
+
+
+				<ul>
+					<li>
+						<h5>증상설명</h5>
+					</li>
+					<li class="article">
+						잎에 회갈색 내지 암갈색의 작은 부정형 반점을 형성한다. 병반은 후에도 그다지 진전되지 않고, 작은 반점으로 남아 있으나, 심하게 감염된 잎은 황색으로 변하면서 마르고 일찍
+						떨어진다.
+					</li>
+				</ul>
+
+				<ul>
+					<li>
+						<h5>방제방법</h5>
+					</li>
+					<li class="article">
+						- 종자를 선별하고, 소독하여 파종한다.<br>
+						- 재배 시 균형시비를 한다. <br>
+						- 병든 잎은 조기에 제거한다.<br>
+						- 온실재배 시 내부가 다습하지 않도록 환기를 한다.
+					</li>
+				</ul>
+
+
+			</li>
+
+			<li>
+				<br><br>
+				<h4>병 사진정보</h4>
+
+				<div class="imgpanel">
+					<div class="container" id="gallery">
+
+
+						<img src="{% static 'images/disease_info/cat1/cat1_1.jpg' %}" alt="점무늬병1">
+						<img src="{% static 'images/disease_info/cat1/cat1_2.jpg' %}" alt="점무늬병2">
+						<img src="{% static 'images/disease_info/cat1/cat1_3.jpg' %}" alt="점무늬병3">
+						<img src="{% static 'images/disease_info/cat1/cat1_4.jpg' %}" alt="점무늬병4">
+						<img src="{% static 'images/disease_info/cat1/cat1_5.jpg' %}" alt="점무늬병5">
+
+					</div>
+				</div>
+				<!-- <script type="text/javascript">
+					// Get the modal
+					var modal = document.getElementById('myModal');
+			   
+				   // Get the image and insert it inside the modal - use its "alt" text as a caption
+				   var img = document.getElementsByClassName('myImg');
+				   var modalImg = document.getElementById("modal-image");
+				   var captionText = document.getElementById("caption");
+				   img.onclick = function(){
+					   modal.style.display = "block";
+					   modalImg.src = this.src;
+					   captionText.innerHTML = this.alt;
+				   }
+			   
+				   // Get the <span> element that closes the modal
+				   var span = document.getElementsByClassName("close")[0];
+			   
+				   // When the user clicks on <span> (x), close the modal
+				   span.onclick = function() { 
+				   modal.style.display = "none";
+				   }
+			   </script> -->
+		</ul>
+	</div>
+
+
+	</li>
+
+	<li>
+		출처 : <a href=""></a>
+	</li>
+
+	</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,82 @@
+.main_field{
+    position: absolute;
+    width: 80%;
+    height: auto;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 50px;
+    transform: translate(-50%,0%);
+    justify-content: center;
+    z-index: 1;
+}
+.main_field .disease-main-content{
+    position:relative;
+    text-align: absolute;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.main_field .disease-main-content.disease-title{
+    width: 60%;
+    height: 700px;
+    margin-bottom: 30px;
+}
+
+colgroup{
+    display: table-column-group;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.main_field.disease-main-content ul{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 50px;
+}
+
+.photoserach li{
+    display: inline-block;
+    margin: 3px 10px 20px 10px;
+}
+
+.photoserach img{
+    width:200px;
+    width:200px;
+}
+
+.main_field h4{
+    font-size: 20px;
+    color: rgba(0,100,200)
+}
+.p1{
+    font-size: 14px;
+    line-height:1.3;
+    color: #595a5b
+}
+.mt1{
+    margin-top: 5px;
+    text-align:center;
+}
+
+#disease_img{
+    position: relative;
+    display: flex;
+    
+}
+
+#disease_img dl{
+    position: relative;
+}
+
+.frame{
+    padding: 0 0 7px 0;
+    border: 1px solid #dedede;
+    border-collapse: collapse;
+    background: url(./images/bg_photo1.gif) repeat 0 0;
+}
+
+
