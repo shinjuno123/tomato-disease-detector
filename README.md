@@ -1,6 +1,15 @@
 # Tomato Disease Detector
 
 ## Technical Stack
+- HTML
+- CSS
+- Javascript
+- Python
+- Django
+- Tensorflow
+- Darknet
+- Yolov4
+
 
 ## Contributors
 - Junho Shin(me)
