@@ -24,7 +24,7 @@
 
 
 ## Overview
-- We developed tomato disease dector web service using tomato disease images from AI HUB(https://aihub.or.kr/)
+- We developed tomato disease detector web service using tomato disease images from AI HUB(https://aihub.or.kr/)
 
 
 ## Image Labeling
